@@ -10,6 +10,5 @@ namespace PBL3.DAL
     {
         Trong, //0
         DaGoiMon, //1
-        DaThanhToan, //2
     }
 }

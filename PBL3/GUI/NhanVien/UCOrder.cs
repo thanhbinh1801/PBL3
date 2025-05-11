@@ -12,14 +12,12 @@ namespace PBL3
 {
     public partial class UCOrder : UserControl
     {
-        public UCOrder()
+        public int idBanAn { get; private set; }
+        public UCOrder(int idBan)
         {
             InitializeComponent();
+            idBan = idBanAn;
         }
 
-        private void UseControlOrder_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

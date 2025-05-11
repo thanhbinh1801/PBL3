@@ -9,7 +9,8 @@ namespace PBL3.DAL
     public enum TrangThaiMonAn
     {
         Con, //0
-        DangCheBien, //1
-        Het, //2
+        Het, //1
+        DangCheBien, //2
+        DaCheBien, //3
     }
 }

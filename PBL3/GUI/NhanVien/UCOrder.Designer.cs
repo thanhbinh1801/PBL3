@@ -127,7 +127,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(565, 379);
+            this.dataGridView1.Size = new System.Drawing.Size(554, 379);
             this.dataGridView1.TabIndex = 11;
             // 
             // Column1
@@ -161,7 +161,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(323, 682);
+            this.button3.Location = new System.Drawing.Point(312, 678);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(135, 54);
             this.button3.TabIndex = 12;
@@ -203,8 +203,7 @@
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label1);
             this.Name = "UCOrder";
-            this.Size = new System.Drawing.Size(757, 757);
-            this.Load += new System.EventHandler(this.UseControlOrder_Load);
+            this.Size = new System.Drawing.Size(727, 757);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

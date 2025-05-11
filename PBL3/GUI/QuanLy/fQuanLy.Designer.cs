@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fQuanLy));
             this.panelQL = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnQuanLiTK = new System.Windows.Forms.Button();
             this.btnQuanLiKho = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnLichSuDonHang = new System.Windows.Forms.Button();
@@ -39,13 +40,14 @@
             this.btnThucDon = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnQuanLiTK = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelQL
             // 
+            this.panelQL.BackgroundImage = global::PBL3.Properties.Resources.pngtree_restaurant_logo_design_vector_template_png_image_5441058;
+            this.panelQL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelQL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelQL.Location = new System.Drawing.Point(172, 0);
             this.panelQL.Name = "panelQL";
@@ -68,6 +70,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(172, 620);
             this.panel1.TabIndex = 2;
+            // 
+            // btnQuanLiTK
+            // 
+            this.btnQuanLiTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLiTK.Location = new System.Drawing.Point(12, 443);
+            this.btnQuanLiTK.Name = "btnQuanLiTK";
+            this.btnQuanLiTK.Size = new System.Drawing.Size(147, 47);
+            this.btnQuanLiTK.TabIndex = 9;
+            this.btnQuanLiTK.Text = "Quản lí TK";
+            this.btnQuanLiTK.UseVisualStyleBackColor = true;
             // 
             // btnQuanLiKho
             // 
@@ -148,16 +160,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(172, 126);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnQuanLiTK
-            // 
-            this.btnQuanLiTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuanLiTK.Location = new System.Drawing.Point(12, 443);
-            this.btnQuanLiTK.Name = "btnQuanLiTK";
-            this.btnQuanLiTK.Size = new System.Drawing.Size(147, 47);
-            this.btnQuanLiTK.TabIndex = 9;
-            this.btnQuanLiTK.Text = "Quản lí TK";
-            this.btnQuanLiTK.UseVisualStyleBackColor = true;
             // 
             // fQuanLy
             // 

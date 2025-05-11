@@ -95,11 +95,11 @@
     <Compile Include="GUI\NhanVien\fNhanVien.Designer.cs">
       <DependentUpon>fNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\NhanVien\UCBanAn.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="GUI\NhanVien\TaoDonHang.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\NhanVien\UCBanAn.Designer.cs">
-      <DependentUpon>UCBanAn.cs</DependentUpon>
+    <Compile Include="GUI\NhanVien\TaoDonHang.Designer.cs">
+      <DependentUpon>TaoDonHang.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DauBep\UCCheBien.cs">
       <SubType>UserControl</SubType>
@@ -143,15 +143,21 @@
     <Compile Include="GUI\QuanLy\UCQuanLiTK.Designer.cs">
       <DependentUpon>UCQuanLiTK.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\UserControlThanhToan.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Migrations\202505061417552_QLNH-v1.cs" />
+    <Compile Include="Migrations\202505061417552_QLNH-v1.Designer.cs">
+      <DependentUpon>202505061417552_QLNH-v1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\UserControlThanhToan.Designer.cs">
-      <DependentUpon>UserControlThanhToan.cs</DependentUpon>
+    <Compile Include="Migrations\202505061444246_QLNH-v2.cs" />
+    <Compile Include="Migrations\202505061444246_QLNH-v2.Designer.cs">
+      <DependentUpon>202505061444246_QLNH-v2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202505021219308_QLNH-v1.cs" />
-    <Compile Include="Migrations\202505021219308_QLNH-v1.Designer.cs">
-      <DependentUpon>202505021219308_QLNH-v1.cs</DependentUpon>
+    <Compile Include="Migrations\202505061500137_QLNH-v3.cs" />
+    <Compile Include="Migrations\202505061500137_QLNH-v3.Designer.cs">
+      <DependentUpon>202505061500137_QLNH-v3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202505090407347_QLNH-v4.cs" />
+    <Compile Include="Migrations\202505090407347_QLNH-v4.Designer.cs">
+      <DependentUpon>202505090407347_QLNH-v4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="QLNHDB.cs" />
@@ -211,8 +217,8 @@
     <EmbeddedResource Include="GUI\NhanVien\fNhanVien.resx">
       <DependentUpon>fNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\NhanVien\UCBanAn.resx">
-      <DependentUpon>UCBanAn.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\NhanVien\TaoDonHang.resx">
+      <DependentUpon>TaoDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DauBep\UCCheBien.resx">
       <DependentUpon>UCCheBien.cs</DependentUpon>
@@ -235,11 +241,17 @@
     <EmbeddedResource Include="GUI\QuanLy\UCQuanLiTK.resx">
       <DependentUpon>UCQuanLiTK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\UserControlThanhToan.resx">
-      <DependentUpon>UserControlThanhToan.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505061417552_QLNH-v1.resx">
+      <DependentUpon>202505061417552_QLNH-v1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202505021219308_QLNH-v1.resx">
-      <DependentUpon>202505021219308_QLNH-v1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505061444246_QLNH-v2.resx">
+      <DependentUpon>202505061444246_QLNH-v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505061500137_QLNH-v3.resx">
+      <DependentUpon>202505061500137_QLNH-v3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505090407347_QLNH-v4.resx">
+      <DependentUpon>202505090407347_QLNH-v4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -249,6 +261,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="GUI\QuanLy\UCThongKe.resx">
       <DependentUpon>UCThongKe.cs</DependentUpon>
@@ -285,7 +298,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\pngtree-restaurant-logo-design-vector-template-png-image_5441058.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
