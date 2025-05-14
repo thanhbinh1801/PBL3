@@ -10,6 +10,7 @@ namespace PBL3.DAL
     {
         QuanLy, //0
         DauBep, //1
-        NhanVien //2
+        NhanVien, //2
+        User   //3 account chưa được cấp quyền truy cập 
     }
 }

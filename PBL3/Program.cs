@@ -1,5 +1,4 @@
-﻿using PBL3.GUI.DauBep;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,7 +16,32 @@ namespace PBL3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fDauBep(102));
+            Nguoidung_Service db = new Nguoidung_Service();
+            Nguoidung new_user = new Nguoidung();
+            new_user.email = "admin@gmail.com";
+            new_user.phanQuyen = PhanQuyen.QuanLy;
+            new_user.matKhau = "admin123";
+            new_user.tenNguoiDung = "admin";
+            new_user.tenTaiKhoan = "admin";
+
+            Nguoidung user1 = new Nguoidung();
+            user1.email = "user1@gmail.com";
+            user1.phanQuyen = PhanQuyen.NhanVien; 
+            user1.matKhau = "user1123";
+            user1.tenNguoiDung = "User 1";
+            user1.tenTaiKhoan = "user1";
+
+            Nguoidung user2 = new Nguoidung();
+            user2.email = "user2@gmail.com";
+            user2.phanQuyen = PhanQuyen.DauBep;  
+            user2.matKhau = "user2123";
+            user2.tenNguoiDung = "User 2";
+            user2.tenTaiKhoan = "user2";
+
+            db.AddUser(new_user);
+            db.AddUser(user1);
+            db.AddUser(user2);
+            Application.Run(new fDangnhap());
         }
     }
 }

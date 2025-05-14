@@ -38,18 +38,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ccbTime = new System.Windows.Forms.ComboBox();
+            this.btnLoc = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTongThu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTongDonHang = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            this.txtBestSale = new System.Windows.Forms.TextBox();
+            this.chartBieuDoDuong = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartBieuDoTron = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBieuDoDuong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBieuDoTron)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,7 +79,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(177, 67);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(97, 33);
+            this.comboBox1.Size = new System.Drawing.Size(113, 33);
             this.comboBox1.TabIndex = 5;
             // 
             // label3
@@ -92,24 +92,25 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Thời gian";
             // 
-            // comboBox2
+            // ccbTime
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(433, 70);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(96, 33);
-            this.comboBox2.TabIndex = 7;
+            this.ccbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ccbTime.FormattingEnabled = true;
+            this.ccbTime.Location = new System.Drawing.Point(433, 70);
+            this.ccbTime.Name = "ccbTime";
+            this.ccbTime.Size = new System.Drawing.Size(165, 33);
+            this.ccbTime.TabIndex = 7;
             // 
-            // button1
+            // btnLoc
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(628, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(73, 35);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Lọc";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoc.Location = new System.Drawing.Point(628, 68);
+            this.btnLoc.Name = "btnLoc";
+            this.btnLoc.Size = new System.Drawing.Size(73, 35);
+            this.btnLoc.TabIndex = 11;
+            this.btnLoc.Text = "Lọc";
+            this.btnLoc.UseVisualStyleBackColor = true;
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
             // label4
             // 
@@ -121,13 +122,13 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Tổng doanh thu";
             // 
-            // textBox1
+            // txtTongThu
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(329, 450);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 41);
-            this.textBox1.TabIndex = 13;
+            this.txtTongThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongThu.Location = new System.Drawing.Point(329, 450);
+            this.txtTongThu.Name = "txtTongThu";
+            this.txtTongThu.Size = new System.Drawing.Size(169, 41);
+            this.txtTongThu.TabIndex = 13;
             // 
             // label5
             // 
@@ -139,13 +140,13 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "Tổng đơn hàng";
             // 
-            // textBox2
+            // txtTongDonHang
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(329, 497);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(169, 41);
-            this.textBox2.TabIndex = 15;
+            this.txtTongDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongDonHang.Location = new System.Drawing.Point(329, 497);
+            this.txtTongDonHang.Name = "txtTongDonHang";
+            this.txtTongDonHang.Size = new System.Drawing.Size(169, 41);
+            this.txtTongDonHang.TabIndex = 15;
             // 
             // label6
             // 
@@ -158,70 +159,70 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "MÓN BÁN CHẠY NHẤT";
             // 
-            // textBox3
+            // txtBestSale
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(756, 105);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(207, 41);
-            this.textBox3.TabIndex = 17;
+            this.txtBestSale.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBestSale.Location = new System.Drawing.Point(756, 105);
+            this.txtBestSale.Name = "txtBestSale";
+            this.txtBestSale.Size = new System.Drawing.Size(207, 41);
+            this.txtBestSale.TabIndex = 17;
             // 
-            // chart1
+            // chartBieuDoDuong
             // 
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.chartBieuDoDuong.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(43, 128);
-            this.chart1.Name = "chart1";
+            this.chartBieuDoDuong.Legends.Add(legend1);
+            this.chartBieuDoDuong.Location = new System.Drawing.Point(43, 128);
+            this.chartBieuDoDuong.Name = "chartBieuDoDuong";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(658, 300);
-            this.chart1.TabIndex = 18;
-            this.chart1.Text = "chart1";
+            this.chartBieuDoDuong.Series.Add(series1);
+            this.chartBieuDoDuong.Size = new System.Drawing.Size(658, 300);
+            this.chartBieuDoDuong.TabIndex = 18;
+            this.chartBieuDoDuong.Text = "chart1";
             // 
-            // chart2
+            // chartBieuDoTron
             // 
             chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
+            this.chartBieuDoTron.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(734, 187);
-            this.chart2.Name = "chart2";
+            this.chartBieuDoTron.Legends.Add(legend2);
+            this.chartBieuDoTron.Location = new System.Drawing.Point(734, 187);
+            this.chartBieuDoTron.Name = "chartBieuDoTron";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series2.Legend = "Legend1";
             series2.Name = "Series1";
-            this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(263, 241);
-            this.chart2.TabIndex = 19;
-            this.chart2.Text = "chart2";
+            this.chartBieuDoTron.Series.Add(series2);
+            this.chartBieuDoTron.Size = new System.Drawing.Size(263, 241);
+            this.chartBieuDoTron.TabIndex = 19;
+            this.chartBieuDoTron.Text = "chart2";
             // 
-            // UserControlThongKe
+            // UCThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.chart2);
-            this.Controls.Add(this.chart1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.chartBieuDoTron);
+            this.Controls.Add(this.chartBieuDoDuong);
+            this.Controls.Add(this.txtBestSale);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTongDonHang);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTongThu);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.btnLoc);
+            this.Controls.Add(this.ccbTime);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "UserControlThongKe";
+            this.Name = "UCThongKe";
             this.Size = new System.Drawing.Size(1010, 553);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBieuDoDuong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBieuDoTron)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,15 +234,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox ccbTime;
+        private System.Windows.Forms.Button btnLoc;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTongThu;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTongDonHang;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.TextBox txtBestSale;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartBieuDoDuong;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartBieuDoTron;
     }
 }

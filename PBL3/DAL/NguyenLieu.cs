@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PBL3.DAL
 {
-    public class NguyenLieu
+    public class  NguyenLieu
     {
         [Key]
         [Required]

@@ -28,52 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnXoaNL = new System.Windows.Forms.Button();
-            this.dgvNguyenLieu = new System.Windows.Forms.DataGridView();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.btnXoaTK = new System.Windows.Forms.Button();
+            this.dgvTK = new System.Windows.Forms.DataGridView();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNguyenLieu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTK)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnXoaNL
+            // btnXoaTK
             // 
-            this.btnXoaNL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaNL.Location = new System.Drawing.Point(629, 100);
-            this.btnXoaNL.Name = "btnXoaNL";
-            this.btnXoaNL.Size = new System.Drawing.Size(179, 38);
-            this.btnXoaNL.TabIndex = 41;
-            this.btnXoaNL.Text = "Xóa tài khoản";
-            this.btnXoaNL.UseVisualStyleBackColor = true;
+            this.btnXoaTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaTK.Location = new System.Drawing.Point(640, 100);
+            this.btnXoaTK.Name = "btnXoaTK";
+            this.btnXoaTK.Size = new System.Drawing.Size(179, 38);
+            this.btnXoaTK.TabIndex = 41;
+            this.btnXoaTK.Text = "Xóa tài khoản";
+            this.btnXoaTK.UseVisualStyleBackColor = true;
+            this.btnXoaTK.Click += new System.EventHandler(this.btnXoaTK_Click);
             // 
-            // dgvNguyenLieu
+            // dgvTK
             // 
-            this.dgvNguyenLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNguyenLieu.Location = new System.Drawing.Point(30, 164);
-            this.dgvNguyenLieu.Name = "dgvNguyenLieu";
-            this.dgvNguyenLieu.RowHeadersWidth = 51;
-            this.dgvNguyenLieu.RowTemplate.Height = 24;
-            this.dgvNguyenLieu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNguyenLieu.Size = new System.Drawing.Size(879, 366);
-            this.dgvNguyenLieu.TabIndex = 40;
+            this.dgvTK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTK.Location = new System.Drawing.Point(30, 164);
+            this.dgvTK.Name = "dgvTK";
+            this.dgvTK.RowHeadersWidth = 51;
+            this.dgvTK.RowTemplate.Height = 24;
+            this.dgvTK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTK.Size = new System.Drawing.Size(867, 366);
+            this.dgvTK.TabIndex = 40;
             // 
-            // textBox7
+            // txtTimKiem
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(116, 104);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(205, 30);
-            this.textBox7.TabIndex = 39;
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.Location = new System.Drawing.Point(75, 104);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(205, 30);
+            this.txtTimKiem.TabIndex = 39;
             // 
             // btnTimKiem
             // 
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.Location = new System.Drawing.Point(396, 100);
+            this.btnTimKiem.Location = new System.Drawing.Point(392, 96);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(119, 38);
             this.btnTimKiem.TabIndex = 38;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // label8
             // 
@@ -90,23 +92,23 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnXoaNL);
-            this.Controls.Add(this.dgvNguyenLieu);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.btnXoaTK);
+            this.Controls.Add(this.dgvTK);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.label8);
             this.Name = "UCQuanLiTK";
-            this.Size = new System.Drawing.Size(938, 563);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNguyenLieu)).EndInit();
+            this.Size = new System.Drawing.Size(1015, 563);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTK)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnXoaNL;
-        private System.Windows.Forms.DataGridView dgvNguyenLieu;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button btnXoaTK;
+        private System.Windows.Forms.DataGridView dgvTK;
+        private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Label label8;
     }

@@ -35,7 +35,7 @@
             this.pnControlFoodQL = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvThucDon = new System.Windows.Forms.DataGridView();
-            this.txtTimKiem_QL = new System.Windows.Forms.TextBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.pnControlFoodQL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThucDon)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +48,7 @@
             this.btnTimKiem_QL.TabIndex = 0;
             this.btnTimKiem_QL.Text = "Tìm Kiếm";
             this.btnTimKiem_QL.UseVisualStyleBackColor = true;
+            this.btnTimKiem_QL.Click += new System.EventHandler(this.btnTimKiem_QL_Click);
             // 
             // btnThemMonAn
             // 
@@ -57,6 +58,7 @@
             this.btnThemMonAn.TabIndex = 1;
             this.btnThemMonAn.Text = "Thêm món ăn";
             this.btnThemMonAn.UseVisualStyleBackColor = true;
+            this.btnThemMonAn.Click += new System.EventHandler(this.btnThemMonAn_Click);
             // 
             // btnSuaMonAn
             // 
@@ -66,6 +68,7 @@
             this.btnSuaMonAn.TabIndex = 2;
             this.btnSuaMonAn.Text = "Sửa món ăn";
             this.btnSuaMonAn.UseVisualStyleBackColor = true;
+            this.btnSuaMonAn.Click += new System.EventHandler(this.btnSuaMonAn_Click);
             // 
             // btnXoaMonAn_QL
             // 
@@ -75,12 +78,13 @@
             this.btnXoaMonAn_QL.TabIndex = 3;
             this.btnXoaMonAn_QL.Text = "Xóa món ăn";
             this.btnXoaMonAn_QL.UseVisualStyleBackColor = true;
+            this.btnXoaMonAn_QL.Click += new System.EventHandler(this.btnXoaMonAn_QL_Click);
             // 
             // pnControlFoodQL
             // 
             this.pnControlFoodQL.Controls.Add(this.label1);
             this.pnControlFoodQL.Controls.Add(this.dgvThucDon);
-            this.pnControlFoodQL.Controls.Add(this.txtTimKiem_QL);
+            this.pnControlFoodQL.Controls.Add(this.txtTimKiem);
             this.pnControlFoodQL.Controls.Add(this.btnTimKiem_QL);
             this.pnControlFoodQL.Controls.Add(this.btnXoaMonAn_QL);
             this.pnControlFoodQL.Controls.Add(this.btnThemMonAn);
@@ -110,20 +114,20 @@
             this.dgvThucDon.Size = new System.Drawing.Size(935, 392);
             this.dgvThucDon.TabIndex = 5;
             // 
-            // txtTimKiem_QL
+            // txtTimKiem
             // 
-            this.txtTimKiem_QL.Location = new System.Drawing.Point(77, 55);
-            this.txtTimKiem_QL.Multiline = true;
-            this.txtTimKiem_QL.Name = "txtTimKiem_QL";
-            this.txtTimKiem_QL.Size = new System.Drawing.Size(125, 46);
-            this.txtTimKiem_QL.TabIndex = 4;
+            this.txtTimKiem.Location = new System.Drawing.Point(77, 55);
+            this.txtTimKiem.Multiline = true;
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(125, 46);
+            this.txtTimKiem.TabIndex = 4;
             // 
-            // UserControlFood_QL
+            // UCThucDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnControlFoodQL);
-            this.Name = "UserControlFood_QL";
+            this.Name = "UCThucDon";
             this.Size = new System.Drawing.Size(1010, 553);
             this.pnControlFoodQL.ResumeLayout(false);
             this.pnControlFoodQL.PerformLayout();
@@ -139,7 +143,7 @@
         private System.Windows.Forms.Button btnSuaMonAn;
         private System.Windows.Forms.Button btnXoaMonAn_QL;
         private System.Windows.Forms.Panel pnControlFoodQL;
-        private System.Windows.Forms.TextBox txtTimKiem_QL;
+        private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.DataGridView dgvThucDon;
         private System.Windows.Forms.Label label1;
     }

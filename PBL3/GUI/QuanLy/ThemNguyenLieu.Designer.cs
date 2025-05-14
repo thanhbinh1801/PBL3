@@ -147,6 +147,7 @@
             this.btnOK.TabIndex = 12;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // ThemNguyenLieu
             // 
@@ -166,7 +167,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ThemNguyenLieu";
-            this.Text = "ThemTaiKhoan";
+            this.Text = "ThemNguyenLieu ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

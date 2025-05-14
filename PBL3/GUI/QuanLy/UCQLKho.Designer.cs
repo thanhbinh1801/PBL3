@@ -58,6 +58,7 @@
             this.btnTimKiem.TabIndex = 24;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -87,6 +88,7 @@
             this.btnXoaNL.TabIndex = 35;
             this.btnXoaNL.Text = "Xóa Nguyên Liệu";
             this.btnXoaNL.UseVisualStyleBackColor = true;
+            this.btnXoaNL.Click += new System.EventHandler(this.btnXoaNL_Click);
             // 
             // btnThemNL
             // 
@@ -97,6 +99,7 @@
             this.btnThemNL.TabIndex = 36;
             this.btnThemNL.Text = "Thêm Nguyên Liệu";
             this.btnThemNL.UseVisualStyleBackColor = true;
+            this.btnThemNL.Click += new System.EventHandler(this.btnThemNL_Click);
             // 
             // cbbKho
             // 

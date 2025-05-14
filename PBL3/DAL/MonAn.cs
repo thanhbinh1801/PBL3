@@ -11,7 +11,7 @@ namespace PBL3.DAL
     {
         [Key]
         [Required]
-        public int IDMonAn { get; set; }
+        public int IDMonAn { get; set; } 
         public string tenMonAn { get; set; }
         public double giaBan { get; set; }
         public TrangThaiMonAn trangThai { get; set; }

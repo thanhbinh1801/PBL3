@@ -18,6 +18,6 @@ namespace PBL3
         public DbSet<DonHang> donHang { get; set; }
         public DbSet<DonHangChiTiet> donHangChiTiet { get; set; }
         public DbSet<KhoNguyenLieu> khoNguyenLieu { get; set; }
-        public DbSet<MonAnNguyenLieu> monAnNguyenLieu { get; set; }
+        public DbSet<MonAnNguyenLieu> MonAnNguyenLieux { get; set; }
     }
 }

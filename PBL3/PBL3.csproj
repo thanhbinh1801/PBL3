@@ -59,6 +59,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\HashPassword.cs" />
+    <Compile Include="BLL\Monan_Service.cs" />
+    <Compile Include="BLL\Nguoidung_Service.cs" />
+    <Compile Include="BLL\Nguyenlieu_Service.cs" />
     <Compile Include="DAL\BanAn.cs" />
     <Compile Include="DAL\DonHang.cs" />
     <Compile Include="DAL\DonHangChiTiet.cs" />
@@ -106,6 +110,12 @@
     </Compile>
     <Compile Include="GUI\DauBep\UCCheBien.Designer.cs">
       <DependentUpon>UCCheBien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLy\SuaMonAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLy\SuaMonAn.Designer.cs">
+      <DependentUpon>SuaMonAn.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\QuanLy\ThemMonAn.cs">
       <SubType>Form</SubType>
@@ -158,6 +168,14 @@
     <Compile Include="Migrations\202505090407347_QLNH-v4.cs" />
     <Compile Include="Migrations\202505090407347_QLNH-v4.Designer.cs">
       <DependentUpon>202505090407347_QLNH-v4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202505090403431_UpdateMonAnNguyenLieu.cs" />
+    <Compile Include="Migrations\202505090403431_UpdateMonAnNguyenLieu.Designer.cs">
+      <DependentUpon>202505090403431_UpdateMonAnNguyenLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202505101310004_AddIDToMonAnNguyenLieu.cs" />
+    <Compile Include="Migrations\202505101310004_AddIDToMonAnNguyenLieu.Designer.cs">
+      <DependentUpon>202505101310004_AddIDToMonAnNguyenLieu.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="QLNHDB.cs" />
@@ -223,6 +241,9 @@
     <EmbeddedResource Include="GUI\DauBep\UCCheBien.resx">
       <DependentUpon>UCCheBien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLy\SuaMonAn.resx">
+      <DependentUpon>SuaMonAn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy\ThemMonAn.resx">
       <DependentUpon>ThemMonAn.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,6 +273,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202505090407347_QLNH-v4.resx">
       <DependentUpon>202505090407347_QLNH-v4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505090403431_UpdateMonAnNguyenLieu.resx">
+      <DependentUpon>202505090403431_UpdateMonAnNguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505101310004_AddIDToMonAnNguyenLieu.resx">
+      <DependentUpon>202505101310004_AddIDToMonAnNguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

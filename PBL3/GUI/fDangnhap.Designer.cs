@@ -34,9 +34,9 @@
             this.tentk_txt = new System.Windows.Forms.TextBox();
             this.mk_txt = new System.Windows.Forms.TextBox();
             this.btn_dangnhap = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lable_doimk = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.lable_dangki = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label
@@ -88,17 +88,18 @@
             this.btn_dangnhap.TabIndex = 5;
             this.btn_dangnhap.Text = "Đăng nhập";
             this.btn_dangnhap.UseVisualStyleBackColor = true;
+            this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
             // 
-            // linkLabel1
+            // lable_doimk
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(675, 180);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(131, 20);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Quên mật khẩu?";
+            this.lable_doimk.AutoSize = true;
+            this.lable_doimk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lable_doimk.Location = new System.Drawing.Point(675, 180);
+            this.lable_doimk.Name = "lable_doimk";
+            this.lable_doimk.Size = new System.Drawing.Size(131, 20);
+            this.lable_doimk.TabIndex = 6;
+            this.lable_doimk.TabStop = true;
+            this.lable_doimk.Text = "Quên mật khẩu?";
             // 
             // label1
             // 
@@ -110,25 +111,25 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Bạn chưa có tài khoản?";
             // 
-            // linkLabel2
+            // lable_dangki
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.Location = new System.Drawing.Point(653, 341);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(123, 20);
-            this.linkLabel2.TabIndex = 8;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Đăng kí tại đây.";
+            this.lable_dangki.AutoSize = true;
+            this.lable_dangki.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lable_dangki.Location = new System.Drawing.Point(653, 341);
+            this.lable_dangki.Name = "lable_dangki";
+            this.lable_dangki.Size = new System.Drawing.Size(123, 20);
+            this.lable_dangki.TabIndex = 8;
+            this.lable_dangki.TabStop = true;
+            this.lable_dangki.Text = "Đăng kí tại đây.";
             // 
             // fDangnhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(833, 450);
-            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.lable_dangki);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.lable_doimk);
             this.Controls.Add(this.btn_dangnhap);
             this.Controls.Add(this.mk_txt);
             this.Controls.Add(this.tentk_txt);
@@ -149,9 +150,9 @@
         private System.Windows.Forms.TextBox tentk_txt;
         private System.Windows.Forms.TextBox mk_txt;
         private System.Windows.Forms.Button btn_dangnhap;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel lable_doimk;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel lable_dangki;
     }
 }
 
