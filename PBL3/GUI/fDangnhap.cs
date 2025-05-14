@@ -40,12 +40,12 @@ namespace PBL3
                 }
                 else if (account.phanQuyen == PhanQuyen.DauBep)
                 {
-                    fDauBep form = new fDauBep();
+                    fDauBep form = new fDauBep(account.IDUser);
                     form.ShowDialog();
                 }
                 else
                 {
-                    fNhanVien form = new fNhanVien();
+                    fNhanVien form = new fNhanVien(account.IDUser);
                     form.ShowDialog();
                 }
             }

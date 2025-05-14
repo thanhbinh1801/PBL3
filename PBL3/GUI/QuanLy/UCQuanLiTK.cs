@@ -24,7 +24,7 @@ namespace PBL3.GUI.QuanLy
         private void LoadData()
         {
             _filterUsers = service.GetAllUsers()
-                .Where(u => u.phanQuyen != PhanQuyen.User)
+                .Where(u => u.phanQuyen != PhanQuyen.User)//cmt lại
                 .ToList();
             var displayData = _filterUsers
                 .Select(u => new
