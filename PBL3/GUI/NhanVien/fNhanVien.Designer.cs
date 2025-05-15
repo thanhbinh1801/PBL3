@@ -38,20 +38,20 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelNV = new System.Windows.Forms.Panel();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.flpBanAn = new System.Windows.Forms.FlowLayoutPanel();
-            this.banAn12 = new System.Windows.Forms.Button();
-            this.banAn11 = new System.Windows.Forms.Button();
-            this.banAn10 = new System.Windows.Forms.Button();
-            this.banAn9 = new System.Windows.Forms.Button();
-            this.banAn8 = new System.Windows.Forms.Button();
-            this.banAn7 = new System.Windows.Forms.Button();
-            this.banAn6 = new System.Windows.Forms.Button();
-            this.banAn5 = new System.Windows.Forms.Button();
-            this.banAn4 = new System.Windows.Forms.Button();
-            this.banAn3 = new System.Windows.Forms.Button();
-            this.banAn2 = new System.Windows.Forms.Button();
             this.banAn1 = new System.Windows.Forms.Button();
+            this.banAn2 = new System.Windows.Forms.Button();
+            this.banAn3 = new System.Windows.Forms.Button();
+            this.banAn4 = new System.Windows.Forms.Button();
+            this.banAn5 = new System.Windows.Forms.Button();
+            this.banAn6 = new System.Windows.Forms.Button();
+            this.banAn7 = new System.Windows.Forms.Button();
+            this.banAn8 = new System.Windows.Forms.Button();
+            this.banAn9 = new System.Windows.Forms.Button();
+            this.banAn10 = new System.Windows.Forms.Button();
+            this.banAn11 = new System.Windows.Forms.Button();
+            this.banAn12 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -94,6 +94,7 @@
             this.btnDangXuat.TabIndex = 7;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // btnTaiKhoan
             // 
@@ -176,95 +177,14 @@
             this.flpBanAn.Size = new System.Drawing.Size(809, 431);
             this.flpBanAn.TabIndex = 1;
             // 
-            // banAn12
+            // banAn1
             // 
-            this.banAn12.Location = new System.Drawing.Point(606, 289);
-            this.banAn12.Name = "banAn12";
-            this.banAn12.Size = new System.Drawing.Size(195, 137);
-            this.banAn12.TabIndex = 23;
-            this.banAn12.Text = "Bàn 12";
-            this.banAn12.UseVisualStyleBackColor = true;
-            // 
-            // banAn11
-            // 
-            this.banAn11.Location = new System.Drawing.Point(405, 289);
-            this.banAn11.Name = "banAn11";
-            this.banAn11.Size = new System.Drawing.Size(195, 137);
-            this.banAn11.TabIndex = 22;
-            this.banAn11.Text = "Bàn 11";
-            this.banAn11.UseVisualStyleBackColor = true;
-            // 
-            // banAn10
-            // 
-            this.banAn10.Location = new System.Drawing.Point(204, 289);
-            this.banAn10.Name = "banAn10";
-            this.banAn10.Size = new System.Drawing.Size(195, 137);
-            this.banAn10.TabIndex = 21;
-            this.banAn10.Text = "Bàn 10";
-            this.banAn10.UseVisualStyleBackColor = true;
-            // 
-            // banAn9
-            // 
-            this.banAn9.Location = new System.Drawing.Point(3, 289);
-            this.banAn9.Name = "banAn9";
-            this.banAn9.Size = new System.Drawing.Size(195, 137);
-            this.banAn9.TabIndex = 20;
-            this.banAn9.Text = "Bàn 9";
-            this.banAn9.UseVisualStyleBackColor = true;
-            // 
-            // banAn8
-            // 
-            this.banAn8.Location = new System.Drawing.Point(606, 146);
-            this.banAn8.Name = "banAn8";
-            this.banAn8.Size = new System.Drawing.Size(195, 137);
-            this.banAn8.TabIndex = 19;
-            this.banAn8.Text = "Bàn 8";
-            this.banAn8.UseVisualStyleBackColor = true;
-            // 
-            // banAn7
-            // 
-            this.banAn7.Location = new System.Drawing.Point(405, 146);
-            this.banAn7.Name = "banAn7";
-            this.banAn7.Size = new System.Drawing.Size(195, 137);
-            this.banAn7.TabIndex = 18;
-            this.banAn7.Text = "Bàn 7";
-            this.banAn7.UseVisualStyleBackColor = true;
-            // 
-            // banAn6
-            // 
-            this.banAn6.Location = new System.Drawing.Point(204, 146);
-            this.banAn6.Name = "banAn6";
-            this.banAn6.Size = new System.Drawing.Size(195, 137);
-            this.banAn6.TabIndex = 17;
-            this.banAn6.Text = "Bàn 6";
-            this.banAn6.UseVisualStyleBackColor = true;
-            // 
-            // banAn5
-            // 
-            this.banAn5.Location = new System.Drawing.Point(3, 146);
-            this.banAn5.Name = "banAn5";
-            this.banAn5.Size = new System.Drawing.Size(195, 137);
-            this.banAn5.TabIndex = 16;
-            this.banAn5.Text = "Bàn 5";
-            this.banAn5.UseVisualStyleBackColor = true;
-            // 
-            // banAn4
-            // 
-            this.banAn4.Location = new System.Drawing.Point(606, 3);
-            this.banAn4.Name = "banAn4";
-            this.banAn4.Size = new System.Drawing.Size(195, 137);
-            this.banAn4.TabIndex = 15;
-            this.banAn4.Text = "Bàn 4";
-            this.banAn4.UseVisualStyleBackColor = true;
-            // 
-            // banAn3
-            // 
-            this.banAn3.Location = new System.Drawing.Point(405, 3);
-            this.banAn3.Name = "banAn3";
-            this.banAn3.Size = new System.Drawing.Size(195, 137);
-            this.banAn3.TabIndex = 14;
-            this.banAn3.Text = "Bàn 3";
-            this.banAn3.UseVisualStyleBackColor = true;
+            this.banAn1.Location = new System.Drawing.Point(3, 3);
+            this.banAn1.Name = "banAn1";
+            this.banAn1.Size = new System.Drawing.Size(195, 137);
+            this.banAn1.TabIndex = 12;
+            this.banAn1.Text = "Bàn 1";
+            this.banAn1.UseVisualStyleBackColor = true;
             // 
             // banAn2
             // 
@@ -275,14 +195,95 @@
             this.banAn2.Text = "Bàn 2";
             this.banAn2.UseVisualStyleBackColor = true;
             // 
-            // banAn1
+            // banAn3
             // 
-            this.banAn1.Location = new System.Drawing.Point(3, 3);
-            this.banAn1.Name = "banAn1";
-            this.banAn1.Size = new System.Drawing.Size(195, 137);
-            this.banAn1.TabIndex = 12;
-            this.banAn1.Text = "Bàn 1";
-            this.banAn1.UseVisualStyleBackColor = true;
+            this.banAn3.Location = new System.Drawing.Point(405, 3);
+            this.banAn3.Name = "banAn3";
+            this.banAn3.Size = new System.Drawing.Size(195, 137);
+            this.banAn3.TabIndex = 14;
+            this.banAn3.Text = "Bàn 3";
+            this.banAn3.UseVisualStyleBackColor = true;
+            // 
+            // banAn4
+            // 
+            this.banAn4.Location = new System.Drawing.Point(606, 3);
+            this.banAn4.Name = "banAn4";
+            this.banAn4.Size = new System.Drawing.Size(195, 137);
+            this.banAn4.TabIndex = 15;
+            this.banAn4.Text = "Bàn 4";
+            this.banAn4.UseVisualStyleBackColor = true;
+            // 
+            // banAn5
+            // 
+            this.banAn5.Location = new System.Drawing.Point(3, 146);
+            this.banAn5.Name = "banAn5";
+            this.banAn5.Size = new System.Drawing.Size(195, 137);
+            this.banAn5.TabIndex = 16;
+            this.banAn5.Text = "Bàn 5";
+            this.banAn5.UseVisualStyleBackColor = true;
+            // 
+            // banAn6
+            // 
+            this.banAn6.Location = new System.Drawing.Point(204, 146);
+            this.banAn6.Name = "banAn6";
+            this.banAn6.Size = new System.Drawing.Size(195, 137);
+            this.banAn6.TabIndex = 17;
+            this.banAn6.Text = "Bàn 6";
+            this.banAn6.UseVisualStyleBackColor = true;
+            // 
+            // banAn7
+            // 
+            this.banAn7.Location = new System.Drawing.Point(405, 146);
+            this.banAn7.Name = "banAn7";
+            this.banAn7.Size = new System.Drawing.Size(195, 137);
+            this.banAn7.TabIndex = 18;
+            this.banAn7.Text = "Bàn 7";
+            this.banAn7.UseVisualStyleBackColor = true;
+            // 
+            // banAn8
+            // 
+            this.banAn8.Location = new System.Drawing.Point(606, 146);
+            this.banAn8.Name = "banAn8";
+            this.banAn8.Size = new System.Drawing.Size(195, 137);
+            this.banAn8.TabIndex = 19;
+            this.banAn8.Text = "Bàn 8";
+            this.banAn8.UseVisualStyleBackColor = true;
+            // 
+            // banAn9
+            // 
+            this.banAn9.Location = new System.Drawing.Point(3, 289);
+            this.banAn9.Name = "banAn9";
+            this.banAn9.Size = new System.Drawing.Size(195, 137);
+            this.banAn9.TabIndex = 20;
+            this.banAn9.Text = "Bàn 9";
+            this.banAn9.UseVisualStyleBackColor = true;
+            // 
+            // banAn10
+            // 
+            this.banAn10.Location = new System.Drawing.Point(204, 289);
+            this.banAn10.Name = "banAn10";
+            this.banAn10.Size = new System.Drawing.Size(195, 137);
+            this.banAn10.TabIndex = 21;
+            this.banAn10.Text = "Bàn 10";
+            this.banAn10.UseVisualStyleBackColor = true;
+            // 
+            // banAn11
+            // 
+            this.banAn11.Location = new System.Drawing.Point(405, 289);
+            this.banAn11.Name = "banAn11";
+            this.banAn11.Size = new System.Drawing.Size(195, 137);
+            this.banAn11.TabIndex = 22;
+            this.banAn11.Text = "Bàn 11";
+            this.banAn11.UseVisualStyleBackColor = true;
+            // 
+            // banAn12
+            // 
+            this.banAn12.Location = new System.Drawing.Point(606, 289);
+            this.banAn12.Name = "banAn12";
+            this.banAn12.Size = new System.Drawing.Size(195, 137);
+            this.banAn12.TabIndex = 23;
+            this.banAn12.Text = "Bàn 12";
+            this.banAn12.UseVisualStyleBackColor = true;
             // 
             // fNhanVien
             // 

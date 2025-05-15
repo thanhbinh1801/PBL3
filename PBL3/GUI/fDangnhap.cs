@@ -1,5 +1,6 @@
 ﻿using PBL3.BLL;
 using PBL3.DAL;
+using PBL3.GUI;
 using PBL3.GUI.DauBep;
 using PBL3.QuanLy;
 using System;
@@ -28,7 +29,7 @@ namespace PBL3
             account = db.GetUserByUsername(tentk_txt.Text);
             if (account == null || !!HashPassword.VerifyPW(mk_txt.Text, account.matKhau))
             {
-                MessageBox.Show("nhap sai thong tin tai khoan");
+                MessageBox.Show("Nhập sai thông tin tài khoản");
             }
             else
             {
@@ -49,6 +50,20 @@ namespace PBL3
                     form.ShowDialog();
                 }
             }
+        }
+
+        private void lable_dangki_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            fDangki form = new fDangki();
+            form.ShowDialog();
+        }
+
+        private void lable_doimk_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            email email = new email();
+            email.ShowDialog();
         }
     }
 }

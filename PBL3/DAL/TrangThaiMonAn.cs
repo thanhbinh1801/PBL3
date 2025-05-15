@@ -10,7 +10,5 @@ namespace PBL3.DAL
     {
         Con, //0
         Het, //1
-        DangCheBien, //2
-        DaCheBien, //3
     }
 }

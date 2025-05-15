@@ -81,17 +81,23 @@
     <Compile Include="GUI\DauBep\fDauBep.Designer.cs">
       <DependentUpon>fDauBep.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\email.Designer.cs">
+      <DependentUpon>email.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\fDangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\fDangnhap.Designer.cs">
       <DependentUpon>fDangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\fKhoiphuctaikhoan.cs">
+    <Compile Include="GUI\DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\fKhoiphuctaikhoan.Designer.cs">
-      <DependentUpon>fKhoiphuctaikhoan.cs</DependentUpon>
+    <Compile Include="GUI\DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\NhanVien\fNhanVien.cs">
       <SubType>Form</SubType>
@@ -159,13 +165,13 @@
     <Compile Include="Migrations\202505061500137_QLNH-v3.Designer.cs">
       <DependentUpon>202505061500137_QLNH-v3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202505090403431_UpdateMonAnNguyenLieu.cs" />
-    <Compile Include="Migrations\202505090403431_UpdateMonAnNguyenLieu.Designer.cs">
-      <DependentUpon>202505090403431_UpdateMonAnNguyenLieu.cs</DependentUpon>
+    <Compile Include="Migrations\202505141428415_QLNH-v5.cs" />
+    <Compile Include="Migrations\202505141428415_QLNH-v5.Designer.cs">
+      <DependentUpon>202505141428415_QLNH-v5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202505131347127_QLNH-v4.cs" />
-    <Compile Include="Migrations\202505131347127_QLNH-v4.Designer.cs">
-      <DependentUpon>202505131347127_QLNH-v4.cs</DependentUpon>
+    <Compile Include="Migrations\202505141604125_QLNH-v6.cs" />
+    <Compile Include="Migrations\202505141604125_QLNH-v6.Designer.cs">
+      <DependentUpon>202505141604125_QLNH-v6.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="QLNHDB.cs" />
@@ -182,12 +188,6 @@
     </Compile>
     <Compile Include="GUI\QuanLy\UCHome.Designer.cs">
       <DependentUpon>UCHome.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\NhanVien\UCOrder.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\NhanVien\UCOrder.Designer.cs">
-      <DependentUpon>UCOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\UCTaiKhoan.cs">
       <SubType>UserControl</SubType>
@@ -213,14 +213,18 @@
     <Compile Include="GUI\QuanLy\fQuanLy.Designer.cs">
       <DependentUpon>fQuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils\Validate.cs" />
     <EmbeddedResource Include="GUI\DauBep\fDauBep.resx">
       <DependentUpon>fDauBep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\email.resx">
+      <DependentUpon>email.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fDangnhap.resx">
       <DependentUpon>fDangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\fKhoiphuctaikhoan.resx">
-      <DependentUpon>fKhoiphuctaikhoan.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\NhanVien\fNhanVien.resx">
       <DependentUpon>fNhanVien.cs</DependentUpon>
@@ -258,11 +262,11 @@
     <EmbeddedResource Include="Migrations\202505061500137_QLNH-v3.resx">
       <DependentUpon>202505061500137_QLNH-v3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202505090403431_UpdateMonAnNguyenLieu.resx">
-      <DependentUpon>202505090403431_UpdateMonAnNguyenLieu.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505141428415_QLNH-v5.resx">
+      <DependentUpon>202505141428415_QLNH-v5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202505131347127_QLNH-v4.resx">
-      <DependentUpon>202505131347127_QLNH-v4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505141604125_QLNH-v6.resx">
+      <DependentUpon>202505141604125_QLNH-v6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -279,9 +283,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy\UCHome.resx">
       <DependentUpon>UCHome.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\NhanVien\UCOrder.resx">
-      <DependentUpon>UCOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UCAccount.resx">
       <DependentUpon>UCTaiKhoan.cs</DependentUpon>

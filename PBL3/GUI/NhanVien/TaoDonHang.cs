@@ -81,8 +81,8 @@ namespace PBL3.GUI.NhanVien
             {
                 moTa = txtMoTa.Text,
                 IDBan = SoBan,
-                IDNguoiTao = IdNguoiTao, // phai tao db nguoidung
-                IDNguoiNhan = 101 ,
+                IDNguoiTao = IdNguoiTao, 
+                IDNguoiNhan = null,
                 thoiGianTao = DateTime.Now,
                 trangThai = TrangThaiDonHang.DangXuLy,
                 DonHangChiTiets = new List<DonHangChiTiet>()
@@ -117,7 +117,8 @@ namespace PBL3.GUI.NhanVien
             {
                 MessageBox.Show("Lỗi: " + ex);
             }
-            this.Hide();
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }

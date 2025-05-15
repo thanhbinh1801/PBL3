@@ -49,13 +49,14 @@
             // 
             // dgvTK
             // 
+            this.dgvTK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTK.Location = new System.Drawing.Point(30, 164);
             this.dgvTK.Name = "dgvTK";
             this.dgvTK.RowHeadersWidth = 51;
             this.dgvTK.RowTemplate.Height = 24;
             this.dgvTK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTK.Size = new System.Drawing.Size(867, 366);
+            this.dgvTK.Size = new System.Drawing.Size(943, 366);
             this.dgvTK.TabIndex = 40;
             // 
             // txtTimKiem

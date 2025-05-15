@@ -11,6 +11,5 @@ namespace PBL3.DAL
         QuanLy, //0
         DauBep, //1
         NhanVien, //2
-        User //3
     }
 }

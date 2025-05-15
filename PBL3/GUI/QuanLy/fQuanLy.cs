@@ -14,9 +14,8 @@ namespace PBL3.QuanLy
 {
     public partial class fQuanLy : Form
     {
-        private Nguoidung user = new Nguoidung();
+        //private Nguoidung user = new Nguoidung();
 
-        // Khai báo các UserControl
         private UCHome ucTrangChu;
         private UCThucDon ucThucDon;
         private UCThongKe ucThongKe;
@@ -24,36 +23,27 @@ namespace PBL3.QuanLy
         private UCQLKho ucQLKho;
         private UCQuanLiTK ucQuanLiTK;
 
-        // Hàm khởi tạo form và nhận username
         public fQuanLy()
         {
             InitializeComponent();
-
-            // Khởi tạo các UserControl
             ucTrangChu = new UCHome();
             ucThucDon = new UCThucDon();
             ucThongKe = new UCThongKe();
             ucLichSu = new UCLichSu();
             ucQLKho = new UCQLKho();
             ucQuanLiTK = new UCQuanLiTK();
-
-            // Mặc định hiển thị Trang chủ
             ShowUserControl(ucTrangChu);
         }
 
-        // Hàm hiển thị UserControl vào panelContent
         private void ShowUserControl(UserControl uc)
         {
-            // Xóa hết các UserControl đã có trong panelContent
 
             panelContent.Controls.Clear();
 
-            // Thêm UserControl mới vào panelContent
             uc.Dock = DockStyle.Fill;
             panelContent.Controls.Add(uc);
         }
 
-        // Các sự kiện button để thay đổi nội dung
         private void btnHome_Click(object sender, EventArgs e)
         {
             ShowUserControl(ucTrangChu);
@@ -91,11 +81,6 @@ namespace PBL3.QuanLy
         private void btnQuanLiTK_Click(object sender, EventArgs e)
         {
             ShowUserControl(ucQuanLiTK);
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

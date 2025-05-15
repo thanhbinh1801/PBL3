@@ -52,9 +52,9 @@
             // btnTimKiem
             // 
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.Location = new System.Drawing.Point(412, 79);
+            this.btnTimKiem.Location = new System.Drawing.Point(378, 92);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(119, 38);
+            this.btnTimKiem.Size = new System.Drawing.Size(136, 38);
             this.btnTimKiem.TabIndex = 24;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
@@ -63,28 +63,29 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.Location = new System.Drawing.Point(215, 83);
+            this.txtTimKiem.Location = new System.Drawing.Point(236, 96);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(162, 30);
+            this.txtTimKiem.Size = new System.Drawing.Size(127, 30);
             this.txtTimKiem.TabIndex = 31;
             // 
             // dgvKhoNguyenLieu
             // 
+            this.dgvKhoNguyenLieu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvKhoNguyenLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhoNguyenLieu.Location = new System.Drawing.Point(65, 141);
+            this.dgvKhoNguyenLieu.Location = new System.Drawing.Point(86, 167);
             this.dgvKhoNguyenLieu.Name = "dgvKhoNguyenLieu";
             this.dgvKhoNguyenLieu.RowHeadersWidth = 51;
             this.dgvKhoNguyenLieu.RowTemplate.Height = 24;
             this.dgvKhoNguyenLieu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKhoNguyenLieu.Size = new System.Drawing.Size(879, 366);
+            this.dgvKhoNguyenLieu.Size = new System.Drawing.Size(869, 366);
             this.dgvKhoNguyenLieu.TabIndex = 34;
             // 
             // btnXoaNL
             // 
             this.btnXoaNL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaNL.Location = new System.Drawing.Point(771, 79);
+            this.btnXoaNL.Location = new System.Drawing.Point(756, 92);
             this.btnXoaNL.Name = "btnXoaNL";
-            this.btnXoaNL.Size = new System.Drawing.Size(173, 38);
+            this.btnXoaNL.Size = new System.Drawing.Size(199, 38);
             this.btnXoaNL.TabIndex = 35;
             this.btnXoaNL.Text = "Xóa Nguyên Liệu";
             this.btnXoaNL.UseVisualStyleBackColor = true;
@@ -93,9 +94,9 @@
             // btnThemNL
             // 
             this.btnThemNL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemNL.Location = new System.Drawing.Point(566, 79);
+            this.btnThemNL.Location = new System.Drawing.Point(539, 92);
             this.btnThemNL.Name = "btnThemNL";
-            this.btnThemNL.Size = new System.Drawing.Size(189, 38);
+            this.btnThemNL.Size = new System.Drawing.Size(201, 38);
             this.btnThemNL.TabIndex = 36;
             this.btnThemNL.Text = "Thêm Nguyên Liệu";
             this.btnThemNL.UseVisualStyleBackColor = true;
@@ -104,7 +105,7 @@
             // cbbKho
             // 
             this.cbbKho.FormattingEnabled = true;
-            this.cbbKho.Location = new System.Drawing.Point(65, 89);
+            this.cbbKho.Location = new System.Drawing.Point(86, 102);
             this.cbbKho.Name = "cbbKho";
             this.cbbKho.Size = new System.Drawing.Size(121, 24);
             this.cbbKho.TabIndex = 37;
@@ -121,7 +122,7 @@
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.label8);
             this.Name = "UCQLKho";
-            this.Size = new System.Drawing.Size(1010, 533);
+            this.Size = new System.Drawing.Size(993, 573);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhoNguyenLieu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

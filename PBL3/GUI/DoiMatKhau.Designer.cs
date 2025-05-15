@@ -1,6 +1,6 @@
 ﻿namespace PBL3
 {
-    partial class fKhoiphuctaikhoan
+    partial class DoiMatKhau
     {
         /// <summary>
         /// Required designer variable.
@@ -54,7 +54,7 @@
             // 
             // newpass_txt
             // 
-            this.newpass_txt.Location = new System.Drawing.Point(277, 145);
+            this.newpass_txt.Location = new System.Drawing.Point(277, 136);
             this.newpass_txt.Name = "newpass_txt";
             this.newpass_txt.Size = new System.Drawing.Size(150, 22);
             this.newpass_txt.TabIndex = 11;
@@ -73,7 +73,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(64, 151);
+            this.label2.Location = new System.Drawing.Point(64, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 18);
             this.label2.TabIndex = 9;
@@ -89,7 +89,7 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Khôi phục tài khoản";
             // 
-            // fKhoiphuctaikhoan
+            // DoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,7 +100,7 @@
             this.Controls.Add(this.newpass_txt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Name = "fKhoiphuctaikhoan";
+            this.Name = "DoiMatKhau";
             this.Text = "Khôi phục tài khoản";
             this.ResumeLayout(false);
             this.PerformLayout();

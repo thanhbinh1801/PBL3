@@ -54,7 +54,16 @@ namespace PBL3
         {
             if (banDangChon != null)
             {
-                banDangChon.BackColor = Color.LightGray; 
+                // Lấy lại trạng thái thực tế của bàn trước đó
+                int soBanTruoc = (int)banDangChon.Tag;
+                var banTruoc = db.BanAns.FirstOrDefault(b => b.IDBan == soBanTruoc);
+                if (banTruoc != null)
+                {
+                    if (banTruoc.trangThaiBanAn == TrangThaiBanAn.Trong)
+                        banDangChon.BackColor = Color.LightGray;
+                    else
+                        banDangChon.BackColor = Color.OrangeRed;
+                }
             }
             banDangChon = sender as Button;
             banDangChon.BackColor = Color.LightBlue;
@@ -67,15 +76,18 @@ namespace PBL3
                 return;
             }
             int soBan = (int)banDangChon.Tag;
-            var ban = db.BanAns.FirstOrDefault(b => b.IDBan == soBan);
-            if(ban != null)
-            {
-                ban.trangThaiBanAn = TrangThaiBanAn.DaGoiMon;
-                db.SaveChanges();
-            }
             TaoDonHang taoDonHang = new TaoDonHang(soBan, IdNhanVien);
-            taoDonHang.ShowDialog();
-            banDangChon.BackColor = Color.OrangeRed;
+            var result = taoDonHang.ShowDialog();
+            if (taoDonHang.DialogResult == DialogResult.OK)
+            {
+                var ban = db.BanAns.FirstOrDefault(b => b.IDBan == soBan);
+                if (ban != null)
+                {
+                    ban.trangThaiBanAn = TrangThaiBanAn.DaGoiMon;
+                    db.SaveChanges();
+                }
+                banDangChon.BackColor = Color.OrangeRed;
+            }
         }
 
         private void btnLichSu_Click(object sender, EventArgs e)
@@ -99,6 +111,13 @@ namespace PBL3
         private void btnHome_Click(object sender, EventArgs e)
         {
             flpBanAn.Visible = true;
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fDangnhap dangnhap = new fDangnhap();
+            dangnhap.ShowDialog();
         }
     }
 }

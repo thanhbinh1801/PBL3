@@ -105,6 +105,7 @@
             // 
             // dgvThucDon
             // 
+            this.dgvThucDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvThucDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvThucDon.Location = new System.Drawing.Point(36, 133);
             this.dgvThucDon.Name = "dgvThucDon";

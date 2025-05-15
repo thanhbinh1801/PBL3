@@ -25,14 +25,19 @@ namespace PBL3
             var displayData = donHangs.Select(d => new
             {
                 IDDonHang = d.IDDonHang,
+                IDBan = d.IDBan,
                 moTa = d.moTa,
-                nguoiTao = d.nguoiTao.tenNguoiDung,  
-                nguoiNhan = d.nguoiNhan.tenNguoiDung, 
-                thoiGianTao = d.thoiGianTao.ToString("dd/MM/yyyy HH:mm"), 
+                nguoiTao =  d.nguoiTao.tenNguoiDung,
+                nguoiNhan = d.nguoiNhan != null ? d.nguoiNhan.tenNguoiDung : "Chưa có",
+                thoiGianTao = d.thoiGianTao.ToString("dd/MM/yyyy HH:mm"),
                 trangThai = d.trangThai.ToString()
             }).ToList();
+
+            dgvLichSu.AutoGenerateColumns = true;
             dgvLichSu.DataSource = displayData;
+
             dgvLichSu.Columns["IDDonHang"].HeaderText = "Mã Đơn Hàng";
+            dgvLichSu.Columns["IDBan"].HeaderText = "Mã Bàn";
             dgvLichSu.Columns["moTa"].HeaderText = "Mô Tả";
             dgvLichSu.Columns["nguoiTao"].HeaderText = "Người Tạo";
             dgvLichSu.Columns["nguoiNhan"].HeaderText = "Người Nhận";

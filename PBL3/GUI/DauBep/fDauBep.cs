@@ -23,7 +23,7 @@ namespace PBL3.GUI.DauBep
         private void btnCheBien_Click(object sender, EventArgs e)
         {
             panelDB.Controls.Clear();
-            UCCheBien cheBien = new UCCheBien();
+            UCCheBien cheBien = new UCCheBien(IdDauBep);
             cheBien.Dock = DockStyle.Fill;
             panelDB.Controls.Add(cheBien);
         }
@@ -49,6 +49,13 @@ namespace PBL3.GUI.DauBep
         private void btnHome_Click(object sender, EventArgs e)
         {
             panelDB.Controls.Clear();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fDangnhap dangnhap = new fDangnhap();
+            dangnhap.ShowDialog();
         }
     }
 }

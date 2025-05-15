@@ -47,7 +47,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(877, 501);
+            this.btnOK.Location = new System.Drawing.Point(418, 572);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(119, 43);
             this.btnOK.TabIndex = 24;
@@ -74,7 +74,7 @@
             // 
             // txtTenMonAn
             // 
-            this.txtTenMonAn.Location = new System.Drawing.Point(208, 107);
+            this.txtTenMonAn.Location = new System.Drawing.Point(168, 107);
             this.txtTenMonAn.Name = "txtTenMonAn";
             this.txtTenMonAn.Size = new System.Drawing.Size(186, 22);
             this.txtTenMonAn.TabIndex = 15;
@@ -94,7 +94,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(378, 35);
+            this.label1.Location = new System.Drawing.Point(351, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(217, 38);
             this.label1.TabIndex = 13;
@@ -102,6 +102,7 @@
             // 
             // dgvNguyenLieu
             // 
+            this.dgvNguyenLieu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNguyenLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNguyenLieu.Location = new System.Drawing.Point(59, 212);
             this.dgvNguyenLieu.Name = "dgvNguyenLieu";
@@ -112,18 +113,18 @@
             // 
             // btn_themNL
             // 
-            this.btn_themNL.Location = new System.Drawing.Point(824, 168);
+            this.btn_themNL.Location = new System.Drawing.Point(794, 168);
             this.btn_themNL.Name = "btn_themNL";
             this.btn_themNL.Size = new System.Drawing.Size(73, 29);
             this.btn_themNL.TabIndex = 27;
-            this.btn_themNL.Text = "OK";
+            this.btn_themNL.Text = "Thêm";
             this.btn_themNL.UseVisualStyleBackColor = true;
             this.btn_themNL.Click += new System.EventHandler(this.btn_themNL_Click);
             // 
             // ccbNL
             // 
             this.ccbNL.FormattingEnabled = true;
-            this.ccbNL.Location = new System.Drawing.Point(208, 168);
+            this.ccbNL.Location = new System.Drawing.Point(168, 166);
             this.ccbNL.Name = "ccbNL";
             this.ccbNL.Size = new System.Drawing.Size(186, 24);
             this.ccbNL.TabIndex = 28;
@@ -131,14 +132,14 @@
             // ccbDVi
             // 
             this.ccbDVi.FormattingEnabled = true;
-            this.ccbDVi.Location = new System.Drawing.Point(678, 168);
+            this.ccbDVi.Location = new System.Drawing.Point(648, 168);
             this.ccbDVi.Name = "ccbDVi";
             this.ccbDVi.Size = new System.Drawing.Size(112, 24);
             this.ccbDVi.TabIndex = 30;
             // 
             // txtSL
             // 
-            this.txtSL.Location = new System.Drawing.Point(503, 168);
+            this.txtSL.Location = new System.Drawing.Point(473, 168);
             this.txtSL.Name = "txtSL";
             this.txtSL.Size = new System.Drawing.Size(80, 22);
             this.txtSL.TabIndex = 31;
@@ -147,7 +148,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(602, 172);
+            this.label4.Location = new System.Drawing.Point(572, 172);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 20);
             this.label4.TabIndex = 32;
@@ -157,7 +158,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(411, 170);
+            this.label6.Location = new System.Drawing.Point(381, 170);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 20);
             this.label6.TabIndex = 33;
@@ -177,7 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 599);
+            this.ClientSize = new System.Drawing.Size(940, 648);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);

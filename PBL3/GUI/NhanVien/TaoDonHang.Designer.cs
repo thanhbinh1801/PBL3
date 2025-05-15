@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.dgvMonAn = new System.Windows.Forms.DataGridView();
+            this.IdMonAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenMonAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnXoaMon = new System.Windows.Forms.Button();
             this.btnThemmon = new System.Windows.Forms.Button();
             this.ccbMonAn = new System.Windows.Forms.ComboBox();
@@ -41,11 +46,6 @@
             this.btnTaoDon = new System.Windows.Forms.Button();
             this.txtMoTa = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.IdMonAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenMonAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMonAn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nuoSoLuong)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +53,7 @@
             // dgvMonAn
             // 
             this.dgvMonAn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMonAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMonAn.ColumnHeadersHeight = 29;
             this.dgvMonAn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdMonAn,
             this.TenMonAn,
@@ -67,6 +67,37 @@
             this.dgvMonAn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMonAn.Size = new System.Drawing.Size(554, 379);
             this.dgvMonAn.TabIndex = 28;
+            // 
+            // IdMonAn
+            // 
+            this.IdMonAn.HeaderText = "ID món ăn";
+            this.IdMonAn.MinimumWidth = 6;
+            this.IdMonAn.Name = "IdMonAn";
+            this.IdMonAn.Visible = false;
+            // 
+            // TenMonAn
+            // 
+            this.TenMonAn.HeaderText = "Tên món ăn";
+            this.TenMonAn.MinimumWidth = 6;
+            this.TenMonAn.Name = "TenMonAn";
+            // 
+            // DonGia
+            // 
+            this.DonGia.HeaderText = "Đơn giá";
+            this.DonGia.MinimumWidth = 6;
+            this.DonGia.Name = "DonGia";
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.HeaderText = "Số lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            // 
+            // ThanhTien
+            // 
+            this.ThanhTien.HeaderText = "Thành tiền";
+            this.ThanhTien.MinimumWidth = 6;
+            this.ThanhTien.Name = "ThanhTien";
             // 
             // btnXoaMon
             // 
@@ -184,37 +215,6 @@
             this.label3.Size = new System.Drawing.Size(72, 25);
             this.label3.TabIndex = 33;
             this.label3.Text = "Mô tả :";
-            // 
-            // IdMonAn
-            // 
-            this.IdMonAn.HeaderText = "ID món ăn";
-            this.IdMonAn.MinimumWidth = 6;
-            this.IdMonAn.Name = "IdMonAn";
-            this.IdMonAn.Visible = false;
-            // 
-            // TenMonAn
-            // 
-            this.TenMonAn.HeaderText = "Tên món ăn";
-            this.TenMonAn.MinimumWidth = 6;
-            this.TenMonAn.Name = "TenMonAn";
-            // 
-            // DonGia
-            // 
-            this.DonGia.HeaderText = "Đơn giá";
-            this.DonGia.MinimumWidth = 6;
-            this.DonGia.Name = "DonGia";
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.HeaderText = "Số lượng";
-            this.SoLuong.MinimumWidth = 6;
-            this.SoLuong.Name = "SoLuong";
-            // 
-            // ThanhTien
-            // 
-            this.ThanhTien.HeaderText = "Thành tiền";
-            this.ThanhTien.MinimumWidth = 6;
-            this.ThanhTien.Name = "ThanhTien";
             // 
             // TaoDonHang
             // 

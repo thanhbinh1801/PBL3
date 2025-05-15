@@ -29,62 +29,112 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.mk_txt = new System.Windows.Forms.TextBox();
-            this.tentk_txt = new System.Windows.Forms.TextBox();
+            this.txtHVT = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rbDauBep = new System.Windows.Forms.RadioButton();
+            this.rbNhanVien = new System.Windows.Forms.RadioButton();
+            this.btnDangKi = new System.Windows.Forms.Button();
+            this.txtMK = new System.Windows.Forms.TextBox();
+            this.txtTenTK = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.mk_txt);
-            this.panel1.Controls.Add(this.tentk_txt);
+            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.txtHVT);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.rbDauBep);
+            this.panel1.Controls.Add(this.rbNhanVien);
+            this.panel1.Controls.Add(this.btnDangKi);
+            this.panel1.Controls.Add(this.txtMK);
+            this.panel1.Controls.Add(this.txtTenTK);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(438, 368);
+            this.panel1.Size = new System.Drawing.Size(541, 489);
             this.panel1.TabIndex = 3;
             // 
-            // button1
+            // txtHVT
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(166, 297);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 45);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Đăng kí";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtHVT.Location = new System.Drawing.Point(249, 133);
+            this.txtHVT.Name = "txtHVT";
+            this.txtHVT.Size = new System.Drawing.Size(206, 22);
+            this.txtHVT.TabIndex = 12;
             // 
-            // mk_txt
+            // label2
             // 
-            this.mk_txt.Location = new System.Drawing.Point(225, 196);
-            this.mk_txt.Name = "mk_txt";
-            this.mk_txt.Size = new System.Drawing.Size(146, 22);
-            this.mk_txt.TabIndex = 7;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(103, 129);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 25);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Họ và tên";
             // 
-            // tentk_txt
+            // rbDauBep
             // 
-            this.tentk_txt.Location = new System.Drawing.Point(225, 135);
-            this.tentk_txt.Name = "tentk_txt";
-            this.tentk_txt.Size = new System.Drawing.Size(146, 22);
-            this.tentk_txt.TabIndex = 6;
+            this.rbDauBep.AutoSize = true;
+            this.rbDauBep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbDauBep.Location = new System.Drawing.Point(301, 329);
+            this.rbDauBep.Name = "rbDauBep";
+            this.rbDauBep.Size = new System.Drawing.Size(107, 29);
+            this.rbDauBep.TabIndex = 10;
+            this.rbDauBep.TabStop = true;
+            this.rbDauBep.Text = "Đầu bếp";
+            this.rbDauBep.UseVisualStyleBackColor = true;
+            // 
+            // rbNhanVien
+            // 
+            this.rbNhanVien.AutoSize = true;
+            this.rbNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbNhanVien.Location = new System.Drawing.Point(141, 329);
+            this.rbNhanVien.Name = "rbNhanVien";
+            this.rbNhanVien.Size = new System.Drawing.Size(121, 29);
+            this.rbNhanVien.TabIndex = 9;
+            this.rbNhanVien.TabStop = true;
+            this.rbNhanVien.Text = "Nhân viên";
+            this.rbNhanVien.UseVisualStyleBackColor = true;
+            // 
+            // btnDangKi
+            // 
+            this.btnDangKi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangKi.Location = new System.Drawing.Point(196, 400);
+            this.btnDangKi.Name = "btnDangKi";
+            this.btnDangKi.Size = new System.Drawing.Size(150, 67);
+            this.btnDangKi.TabIndex = 8;
+            this.btnDangKi.Text = "Đăng kí";
+            this.btnDangKi.UseVisualStyleBackColor = true;
+            this.btnDangKi.Click += new System.EventHandler(this.btnDangKi_Click);
+            // 
+            // txtMK
+            // 
+            this.txtMK.Location = new System.Drawing.Point(249, 285);
+            this.txtMK.Name = "txtMK";
+            this.txtMK.Size = new System.Drawing.Size(206, 22);
+            this.txtMK.TabIndex = 7;
+            // 
+            // txtTenTK
+            // 
+            this.txtTenTK.Location = new System.Drawing.Point(249, 235);
+            this.txtTenTK.Name = "txtTenTK";
+            this.txtTenTK.Size = new System.Drawing.Size(206, 22);
+            this.txtTenTK.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(79, 192);
+            this.label4.Location = new System.Drawing.Point(103, 281);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 25);
             this.label4.TabIndex = 4;
@@ -94,7 +144,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(79, 131);
+            this.label3.Location = new System.Drawing.Point(103, 231);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(131, 25);
             this.label3.TabIndex = 3;
@@ -104,7 +154,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 30);
+            this.label1.Location = new System.Drawing.Point(97, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(335, 42);
             this.label1.TabIndex = 0;
@@ -119,33 +169,28 @@
             this.label.Size = new System.Drawing.Size(0, 16);
             this.label.TabIndex = 2;
             // 
-            // radioButton1
+            // txtEmail
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(95, 263);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 20);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.txtEmail.Location = new System.Drawing.Point(249, 184);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(206, 22);
+            this.txtEmail.TabIndex = 14;
             // 
-            // radioButton2
+            // label5
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(236, 263);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(103, 20);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(103, 180);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 25);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Email";
             // 
             // fDangki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 381);
+            this.ClientSize = new System.Drawing.Size(546, 504);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label);
             this.Name = "fDangki";
@@ -160,14 +205,18 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox mk_txt;
-        private System.Windows.Forms.TextBox tentk_txt;
+        private System.Windows.Forms.Button btnDangKi;
+        private System.Windows.Forms.TextBox txtMK;
+        private System.Windows.Forms.TextBox txtTenTK;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbDauBep;
+        private System.Windows.Forms.RadioButton rbNhanVien;
+        private System.Windows.Forms.TextBox txtHVT;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label5;
     }
 }

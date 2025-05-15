@@ -29,65 +29,21 @@
         private void InitializeComponent()
         {
             this.dgvLichSu = new System.Windows.Forms.DataGridView();
-            this.idDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Thoigian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thongTin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichSu)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvLichSu
             // 
+            this.dgvLichSu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvLichSu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLichSu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDon,
-            this.Thoigian,
-            this.tenBan,
-            this.trangThai,
-            this.thongTin});
-            this.dgvLichSu.Location = new System.Drawing.Point(126, 104);
+            this.dgvLichSu.Location = new System.Drawing.Point(56, 81);
             this.dgvLichSu.Name = "dgvLichSu";
             this.dgvLichSu.RowHeadersWidth = 51;
             this.dgvLichSu.RowTemplate.Height = 24;
-            this.dgvLichSu.Size = new System.Drawing.Size(759, 398);
+            this.dgvLichSu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLichSu.Size = new System.Drawing.Size(858, 428);
             this.dgvLichSu.TabIndex = 0;
-            // 
-            // idDon
-            // 
-            this.idDon.HeaderText = "Mã đơn";
-            this.idDon.MinimumWidth = 6;
-            this.idDon.Name = "idDon";
-            this.idDon.Width = 125;
-            // 
-            // Thoigian
-            // 
-            this.Thoigian.HeaderText = "Thời gian";
-            this.Thoigian.MinimumWidth = 6;
-            this.Thoigian.Name = "Thoigian";
-            this.Thoigian.Width = 125;
-            // 
-            // tenBan
-            // 
-            this.tenBan.HeaderText = "Tên bàn";
-            this.tenBan.MinimumWidth = 6;
-            this.tenBan.Name = "tenBan";
-            this.tenBan.Width = 125;
-            // 
-            // trangThai
-            // 
-            this.trangThai.HeaderText = "Trạng thái";
-            this.trangThai.MinimumWidth = 6;
-            this.trangThai.Name = "trangThai";
-            this.trangThai.Width = 125;
-            // 
-            // thongTin
-            // 
-            this.thongTin.HeaderText = "Thông tin";
-            this.thongTin.MinimumWidth = 6;
-            this.thongTin.Name = "thongTin";
-            this.thongTin.Width = 125;
             // 
             // label1
             // 
@@ -107,7 +63,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvLichSu);
             this.Name = "UCLichSu";
-            this.Size = new System.Drawing.Size(1010, 553);
+            this.Size = new System.Drawing.Size(986, 553);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichSu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -117,11 +73,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvLichSu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Thoigian;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn trangThai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn thongTin;
         private System.Windows.Forms.Label label1;
     }
 }

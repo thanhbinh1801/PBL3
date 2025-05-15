@@ -44,7 +44,7 @@
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.ForeColor = System.Drawing.Color.Red;
-            this.label.Location = new System.Drawing.Point(115, 14);
+            this.label.Location = new System.Drawing.Point(235, 21);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(602, 42);
             this.label.TabIndex = 1;
@@ -53,38 +53,38 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(12, 59);
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(12, 92);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(554, 347);
+            this.panel1.Size = new System.Drawing.Size(582, 419);
             this.panel1.TabIndex = 2;
             // 
             // tentk_txt
             // 
             this.tentk_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tentk_txt.Location = new System.Drawing.Point(639, 77);
+            this.tentk_txt.Location = new System.Drawing.Point(678, 92);
             this.tentk_txt.Multiline = true;
             this.tentk_txt.Name = "tentk_txt";
-            this.tentk_txt.Size = new System.Drawing.Size(155, 29);
+            this.tentk_txt.Size = new System.Drawing.Size(275, 39);
             this.tentk_txt.TabIndex = 3;
             this.tentk_txt.Text = "Tên tài khoản";
             // 
             // mk_txt
             // 
             this.mk_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mk_txt.Location = new System.Drawing.Point(639, 129);
+            this.mk_txt.Location = new System.Drawing.Point(678, 178);
             this.mk_txt.Multiline = true;
             this.mk_txt.Name = "mk_txt";
-            this.mk_txt.Size = new System.Drawing.Size(155, 26);
+            this.mk_txt.Size = new System.Drawing.Size(275, 36);
             this.mk_txt.TabIndex = 4;
             this.mk_txt.Text = "Mật khẩu";
             // 
             // btn_dangnhap
             // 
             this.btn_dangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dangnhap.Location = new System.Drawing.Point(639, 244);
+            this.btn_dangnhap.Location = new System.Drawing.Point(678, 310);
             this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(155, 43);
+            this.btn_dangnhap.Size = new System.Drawing.Size(275, 66);
             this.btn_dangnhap.TabIndex = 5;
             this.btn_dangnhap.Text = "Đăng nhập";
             this.btn_dangnhap.UseVisualStyleBackColor = true;
@@ -94,18 +94,19 @@
             // 
             this.lable_doimk.AutoSize = true;
             this.lable_doimk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lable_doimk.Location = new System.Drawing.Point(675, 180);
+            this.lable_doimk.Location = new System.Drawing.Point(822, 254);
             this.lable_doimk.Name = "lable_doimk";
             this.lable_doimk.Size = new System.Drawing.Size(131, 20);
             this.lable_doimk.TabIndex = 6;
             this.lable_doimk.TabStop = true;
             this.lable_doimk.Text = "Quên mật khẩu?";
+            this.lable_doimk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lable_doimk_LinkClicked);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(622, 311);
+            this.label1.Location = new System.Drawing.Point(729, 437);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 20);
             this.label1.TabIndex = 7;
@@ -115,18 +116,19 @@
             // 
             this.lable_dangki.AutoSize = true;
             this.lable_dangki.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lable_dangki.Location = new System.Drawing.Point(653, 341);
+            this.lable_dangki.Location = new System.Drawing.Point(760, 475);
             this.lable_dangki.Name = "lable_dangki";
             this.lable_dangki.Size = new System.Drawing.Size(123, 20);
             this.lable_dangki.TabIndex = 8;
             this.lable_dangki.TabStop = true;
             this.lable_dangki.Text = "Đăng kí tại đây.";
+            this.lable_dangki.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lable_dangki_LinkClicked);
             // 
             // fDangnhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(833, 450);
+            this.ClientSize = new System.Drawing.Size(1019, 541);
             this.Controls.Add(this.lable_dangki);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lable_doimk);

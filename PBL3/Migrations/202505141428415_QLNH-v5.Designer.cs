@@ -7,13 +7,13 @@ namespace PBL3.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class QLNHv4 : IMigrationMetadata
+    public sealed partial class QLNHv5 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(QLNHv4));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(QLNHv5));
         
         string IMigrationMetadata.Id
         {
-            get { return "202505131347127_QLNH-v4"; }
+            get { return "202505141428415_QLNH-v5"; }
         }
         
         string IMigrationMetadata.Source

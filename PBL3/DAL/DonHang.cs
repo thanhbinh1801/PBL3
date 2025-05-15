@@ -17,7 +17,7 @@ public class DonHang
     [ForeignKey("IDNguoiTao")]
     public virtual Nguoidung nguoiTao { get; set; } 
 
-    public int IDNguoiNhan { get; set; }
+    public int? IDNguoiNhan { get; set; }
     [ForeignKey("IDNguoiNhan")]
     public virtual Nguoidung nguoiNhan { get; set; } 
 

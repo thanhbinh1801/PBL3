@@ -109,6 +109,7 @@
             // 
             // dgvNguyenLieu
             // 
+            this.dgvNguyenLieu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNguyenLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNguyenLieu.Location = new System.Drawing.Point(130, 207);
             this.dgvNguyenLieu.Name = "dgvNguyenLieu";

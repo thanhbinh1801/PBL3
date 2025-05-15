@@ -30,14 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.btnChon = new System.Windows.Forms.Button();
-            this.btnChonMon = new System.Windows.Forms.Button();
             this.btnTimKiem_DB = new System.Windows.Forms.Button();
             this.dgvMonAn = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnXacNhan = new System.Windows.Forms.Button();
             this.cbbDanhSachDonHang = new System.Windows.Forms.ComboBox();
             this.pnControlFoodNV = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMonAn)).BeginInit();
             this.pnControlFoodNV.SuspendLayout();
@@ -45,7 +44,7 @@
             // 
             // btnChon
             // 
-            this.btnChon.Location = new System.Drawing.Point(243, 75);
+            this.btnChon.Location = new System.Drawing.Point(313, 75);
             this.btnChon.Name = "btnChon";
             this.btnChon.Size = new System.Drawing.Size(145, 62);
             this.btnChon.TabIndex = 6;
@@ -53,26 +52,19 @@
             this.btnChon.UseVisualStyleBackColor = true;
             this.btnChon.Click += new System.EventHandler(this.btnChon_Click);
             // 
-            // btnChonMon
-            // 
-            this.btnChonMon.Location = new System.Drawing.Point(790, 75);
-            this.btnChonMon.Name = "btnChonMon";
-            this.btnChonMon.Size = new System.Drawing.Size(145, 62);
-            this.btnChonMon.TabIndex = 5;
-            this.btnChonMon.Text = "Hoàn thành món ";
-            this.btnChonMon.UseVisualStyleBackColor = true;
-            // 
             // btnTimKiem_DB
             // 
-            this.btnTimKiem_DB.Location = new System.Drawing.Point(592, 75);
+            this.btnTimKiem_DB.Location = new System.Drawing.Point(790, 75);
             this.btnTimKiem_DB.Name = "btnTimKiem_DB";
             this.btnTimKiem_DB.Size = new System.Drawing.Size(145, 62);
             this.btnTimKiem_DB.TabIndex = 7;
             this.btnTimKiem_DB.Text = "Tìm kiếm";
             this.btnTimKiem_DB.UseVisualStyleBackColor = true;
+            this.btnTimKiem_DB.Click += new System.EventHandler(this.btnTimKiem_DB_Click);
             // 
             // dgvMonAn
             // 
+            this.dgvMonAn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMonAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMonAn.Location = new System.Drawing.Point(53, 183);
             this.dgvMonAn.Name = "dgvMonAn";
@@ -99,6 +91,7 @@
             this.btnXacNhan.TabIndex = 11;
             this.btnXacNhan.Text = "Xác Nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // cbbDanhSachDonHang
             // 
@@ -110,26 +103,25 @@
             // 
             // pnControlFoodNV
             // 
-            this.pnControlFoodNV.Controls.Add(this.textBox1);
+            this.pnControlFoodNV.Controls.Add(this.txtTimKiem);
             this.pnControlFoodNV.Controls.Add(this.cbbDanhSachDonHang);
             this.pnControlFoodNV.Controls.Add(this.btnXacNhan);
             this.pnControlFoodNV.Controls.Add(this.label1);
             this.pnControlFoodNV.Controls.Add(this.dgvMonAn);
             this.pnControlFoodNV.Controls.Add(this.btnTimKiem_DB);
-            this.pnControlFoodNV.Controls.Add(this.btnChonMon);
             this.pnControlFoodNV.Controls.Add(this.btnChon);
             this.pnControlFoodNV.Location = new System.Drawing.Point(3, 3);
             this.pnControlFoodNV.Name = "pnControlFoodNV";
             this.pnControlFoodNV.Size = new System.Drawing.Size(983, 676);
             this.pnControlFoodNV.TabIndex = 5;
             // 
-            // textBox1
+            // txtTimKiem
             // 
-            this.textBox1.Location = new System.Drawing.Point(428, 85);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 42);
-            this.textBox1.TabIndex = 13;
+            this.txtTimKiem.Location = new System.Drawing.Point(565, 86);
+            this.txtTimKiem.Multiline = true;
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(145, 42);
+            this.txtTimKiem.TabIndex = 13;
             // 
             // contextMenuStrip1
             // 
@@ -154,14 +146,13 @@
         #endregion
 
         private System.Windows.Forms.Button btnChon;
-        private System.Windows.Forms.Button btnChonMon;
         private System.Windows.Forms.Button btnTimKiem_DB;
         private System.Windows.Forms.DataGridView dgvMonAn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnXacNhan;
         private System.Windows.Forms.ComboBox cbbDanhSachDonHang;
         private System.Windows.Forms.Panel pnControlFoodNV;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

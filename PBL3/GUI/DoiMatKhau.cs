@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace PBL3
 {
-    public partial class UCOrder : UserControl
+    public partial class DoiMatKhau : Form
     {
-        public int idBanAn { get; private set; }
-        public UCOrder(int idBan)
+        private int idUser;
+        public DoiMatKhau(int iduser)
         {
             InitializeComponent();
-            idBan = idBanAn;
+            idUser = iduser;
         }
 
     }

@@ -46,6 +46,7 @@
             // panelContent
             // 
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContent.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelContent.Location = new System.Drawing.Point(174, 0);
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(1040, 620);
@@ -70,7 +71,7 @@
             // btnQuanLiTK
             // 
             this.btnQuanLiTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuanLiTK.Location = new System.Drawing.Point(12, 498);
+            this.btnQuanLiTK.Location = new System.Drawing.Point(12, 495);
             this.btnQuanLiTK.Name = "btnQuanLiTK";
             this.btnQuanLiTK.Size = new System.Drawing.Size(147, 47);
             this.btnQuanLiTK.TabIndex = 9;
@@ -154,16 +155,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnQuanLiTK
-            // 
-            this.btnQuanLiTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuanLiTK.Location = new System.Drawing.Point(12, 443);
-            this.btnQuanLiTK.Name = "btnQuanLiTK";
-            this.btnQuanLiTK.Size = new System.Drawing.Size(147, 47);
-            this.btnQuanLiTK.TabIndex = 9;
-            this.btnQuanLiTK.Text = "Quản lí TK";
-            this.btnQuanLiTK.UseVisualStyleBackColor = true;
-            // 
             // fQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -180,8 +171,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLichSuDonHang;
         private System.Windows.Forms.Button btnDangXuat;
@@ -191,5 +180,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnQuanLiKho;
         private System.Windows.Forms.Button btnQuanLiTK;
+        private System.Windows.Forms.Panel panelContent;
     }
 }
