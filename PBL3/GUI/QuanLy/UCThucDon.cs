@@ -30,7 +30,7 @@ namespace PBL3
             var displayData = _filterMonAns
                 .Select(m => new
                 {
-                    ID = m.IDMonAn,
+                    ID = m.IDMonAn, 
                     tenMonAn = m.tenMonAn,
                     giaBan = m.giaBan,
                     trangThai = m.trangThai
@@ -90,8 +90,10 @@ namespace PBL3
             {
                 string tenMonAn = dgvThucDon.SelectedRows[0].Cells["tenMonAn"].Value.ToString();
                 SuaMonAn form = new SuaMonAn(tenMonAn);
-                form.ShowDialog();
-                LoadData();
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    LoadData();
+                }
             }
         }
 

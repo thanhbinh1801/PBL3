@@ -35,8 +35,6 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.ccbTime = new System.Windows.Forms.ComboBox();
             this.btnLoc = new System.Windows.Forms.Button();
@@ -63,30 +61,11 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "THỐNG KÊ DOANH THU";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Phương thức";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(177, 67);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(113, 33);
-            this.comboBox1.TabIndex = 5;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(334, 73);
+            this.label3.Location = new System.Drawing.Point(38, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 25);
             this.label3.TabIndex = 6;
@@ -96,17 +75,17 @@
             // 
             this.ccbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ccbTime.FormattingEnabled = true;
-            this.ccbTime.Location = new System.Drawing.Point(433, 70);
+            this.ccbTime.Location = new System.Drawing.Point(204, 67);
             this.ccbTime.Name = "ccbTime";
-            this.ccbTime.Size = new System.Drawing.Size(165, 33);
+            this.ccbTime.Size = new System.Drawing.Size(192, 33);
             this.ccbTime.TabIndex = 7;
             // 
             // btnLoc
             // 
             this.btnLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoc.Location = new System.Drawing.Point(628, 68);
+            this.btnLoc.Location = new System.Drawing.Point(504, 71);
             this.btnLoc.Name = "btnLoc";
-            this.btnLoc.Size = new System.Drawing.Size(73, 35);
+            this.btnLoc.Size = new System.Drawing.Size(106, 35);
             this.btnLoc.TabIndex = 11;
             this.btnLoc.Text = "Lọc";
             this.btnLoc.UseVisualStyleBackColor = true;
@@ -127,7 +106,7 @@
             this.txtTongThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongThu.Location = new System.Drawing.Point(329, 450);
             this.txtTongThu.Name = "txtTongThu";
-            this.txtTongThu.Size = new System.Drawing.Size(169, 41);
+            this.txtTongThu.Size = new System.Drawing.Size(257, 41);
             this.txtTongThu.TabIndex = 13;
             // 
             // label5
@@ -145,7 +124,7 @@
             this.txtTongDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongDonHang.Location = new System.Drawing.Point(329, 497);
             this.txtTongDonHang.Name = "txtTongDonHang";
-            this.txtTongDonHang.Size = new System.Drawing.Size(169, 41);
+            this.txtTongDonHang.Size = new System.Drawing.Size(257, 41);
             this.txtTongDonHang.TabIndex = 15;
             // 
             // label6
@@ -216,8 +195,6 @@
             this.Controls.Add(this.btnLoc);
             this.Controls.Add(this.ccbTime);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UCThongKe";
             this.Size = new System.Drawing.Size(1010, 553);
@@ -231,8 +208,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox ccbTime;
         private System.Windows.Forms.Button btnLoc;

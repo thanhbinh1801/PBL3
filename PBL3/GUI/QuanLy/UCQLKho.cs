@@ -16,16 +16,39 @@ namespace PBL3.GUI.QuanLy
     {
         private NguyenLieu_Service nguyenLieuService = new NguyenLieu_Service();  // thao tác với dữ liệu
         private List<NguyenLieu> _nguyenLieus = new List<NguyenLieu>(); //lưu trữ danh sách nglieu đã lọc
+        private QLNHDB db = new QLNHDB();
         public UCQLKho()
         {
             InitializeComponent();
             Load_data();
+            LoadKho();
         }
+
+        private void LoadKho()
+        {
+            // Thêm item "Tất cả" vào combobox
+            cbbKho.Items.Add("Tất cả");
+            
+            // Load danh sách kho từ database
+            var khos = db.khoNguyenLieu.ToList();
+            foreach (var kho in khos)
+            {
+                cbbKho.Items.Add(kho.tenKho);
+            }
+            
+            // Chọn "Tất cả" làm mặc định
+            cbbKho.SelectedIndex = 0;
+        }
+
         private void Load_data()
         {
             _nguyenLieus = nguyenLieuService.GetAllNguyenLieu();  
+            LoadDataToGridView(_nguyenLieus);
+        }
 
-            var displayData = _nguyenLieus.Select(nl => new
+        private void LoadDataToGridView(List<NguyenLieu> nguyenLieus)
+        {
+            var displayData = nguyenLieus.Select(nl => new
             {
                 ID = nl.IDNguyenLieu,
                 TenNguyenLieu = nl.tenNguyenLieu,
@@ -45,23 +68,18 @@ namespace PBL3.GUI.QuanLy
             dgvKhoNguyenLieu.Columns["HanSuDung"].HeaderText = "Hạn Sử Dụng";
             dgvKhoNguyenLieu.Columns["Kho"].HeaderText = "Kho Nguyên Liệu";
         }
+
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             string keyword = txtTimKiem.Text.Trim().ToLower();
-            var result = _nguyenLieus
-                .Where(nl => nl.tenNguyenLieu.ToLower().Contains(keyword))
-                .Select(nl => new
-                {
-                    ID = nl.IDNguyenLieu,
-                    TenNguyenLieu = nl.tenNguyenLieu,
-                    DonViTinh = nl.donViTinh,
-                    SoLuong = nl.soLuong,
-                    GiaNhap = nl.giaNhap,
-                    HanSuDung = nl.hanSuDung.ToString("dd/MM/yyyy"),
-                    Kho = nl.khoNguyenLieu?.tenKho
-                })
-                .ToList();
-            dgvKhoNguyenLieu.DataSource = result;
+            string selectedKho = cbbKho.SelectedItem?.ToString();
+
+            var filteredList = _nguyenLieus.Where(nl => 
+                nl.tenNguyenLieu.ToLower().Contains(keyword) && 
+                (selectedKho == "Tất cả" || nl.khoNguyenLieu?.tenKho == selectedKho)
+            ).ToList();
+
+            LoadDataToGridView(filteredList);
         }
 
         private void btnThemNL_Click(object sender, EventArgs e)

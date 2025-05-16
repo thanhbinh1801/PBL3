@@ -11,7 +11,7 @@ VALUES
 
 
 select * from BanAns;
-SET IDENTITY_INSERT BanAns ON;
+SET IDENTITY_INSERT BanAns OFF;
 delete from BanAns;
 INSERT INTO BanAns (IDBan, trangThaiBanAn)
 VALUES 
@@ -42,6 +42,7 @@ VALUES
 
 select * from MonAnNguyenLieux;
 delete from MonAnNguyenLieux;
+SET IDENTITY_INSERT MonAnNguyenLieux ON;
 INSERT INTO MonAnNguyenLieux (IDMonAn, IDNguyenLieu, soLuong, donVi)
 VALUES 
 (1, 1, 1000, 'g'),

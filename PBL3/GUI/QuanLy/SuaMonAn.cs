@@ -45,7 +45,7 @@ namespace PBL3.GUI.QuanLy
             {
                 tenNguyenLieu = nguyenlieuservice.GetNguyenLieuById(nl.IDNguyenLieu).tenNguyenLieu,
                 soLuong = nl.soLuong,
-                donVi = nguyenlieuservice.GetNguyenLieuById(nl.IDNguyenLieu).donViTinh
+                donVi = nl.donVi
             }).ToList();
 
             dgvNguyenLieu.DataSource = displayData;
@@ -111,7 +111,7 @@ namespace PBL3.GUI.QuanLy
             {
                 tenNguyenLieu = nguyenlieuservice.GetNguyenLieuById(nl.IDNguyenLieu).tenNguyenLieu,
                 soLuong = nl.soLuong,
-                donVi = nguyenlieuservice.GetNguyenLieuById(nl.IDNguyenLieu).donViTinh
+                donVi = nl.donVi
             }).ToList();
 
             dgvNguyenLieu.DataSource = displayData;
@@ -119,10 +119,6 @@ namespace PBL3.GUI.QuanLy
             dgvNguyenLieu.Columns["soLuong"].HeaderText = "Số lượng";
             dgvNguyenLieu.Columns["donVi"].HeaderText = "Đơn vị";
         }
-
-
-
-
 
         private void btnSuaMonAn_Click_1(object sender, EventArgs e)
         {
@@ -149,13 +145,26 @@ namespace PBL3.GUI.QuanLy
 
             if (service.UpdateMonAn(updatedMonAn.IDMonAn, updatedMonAn))
             {
+                // Thêm lại các nguyên liệu mới
+                bool allSuccess = true;
                 foreach (MonAnNguyenLieu i in nguyenLieus)
                 {
-                    service.UpdateMonAnNguyenLieu(i);
+                    if (!service.AddMonAnNguyenLieu(i))
+                    {
+                        allSuccess = false;
+                        break;
+                    }
                 }
 
-                MessageBox.Show("Sửa món ăn thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.DialogResult = DialogResult.OK;
+                if (allSuccess)
+                {
+                    MessageBox.Show("Sửa món ăn thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.DialogResult = DialogResult.OK;
+                }
+                else
+                {
+                    MessageBox.Show("Sửa món ăn thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
@@ -195,7 +204,7 @@ namespace PBL3.GUI.QuanLy
             {
                 tenNguyenLieu = nguyenlieuservice.GetNguyenLieuById(nl.IDNguyenLieu).tenNguyenLieu,
                 soLuong = nl.soLuong,
-                donVi = nguyenlieuservice.GetNguyenLieuById(nl.IDNguyenLieu).donViTinh
+                donVi = nl.donVi
             }).ToList();
         }
     }

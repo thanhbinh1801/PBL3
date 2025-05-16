@@ -44,6 +44,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Xác nhận";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // newpass_confirm_txt
             // 

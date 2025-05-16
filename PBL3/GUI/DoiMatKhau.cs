@@ -19,5 +19,11 @@ namespace PBL3
             idUser = iduser;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fDangnhap form = new fDangnhap();
+            form.ShowDialog();
+        }
     }
 }

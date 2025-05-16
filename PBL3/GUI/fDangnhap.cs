@@ -21,6 +21,27 @@ namespace PBL3
         public fDangnhap()
         {
             InitializeComponent();
+            
+            // Configure password TextBox
+            mk_txt.PasswordChar = '*';
+            mk_txt.Multiline = false;
+            
+            // Add event handlers for placeholder text
+            mk_txt.Enter += (s, e) => {
+                if (mk_txt.Text == "Mật khẩu")
+                {
+                    mk_txt.Text = "";
+                    mk_txt.PasswordChar = '*';
+                }
+            };
+            
+            mk_txt.Leave += (s, e) => {
+                if (string.IsNullOrWhiteSpace(mk_txt.Text))
+                {
+                    mk_txt.Text = "Mật khẩu";
+                    mk_txt.PasswordChar = '\0';  // Show placeholder text normally
+                }
+            };
         }
 
         private void btn_dangnhap_Click(object sender, EventArgs e)
@@ -64,6 +85,11 @@ namespace PBL3
             this.Hide();
             email email = new email();
             email.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -42,6 +42,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNguyenLieu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +84,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(55, 107);
+            this.label2.Location = new System.Drawing.Point(38, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 20);
             this.label2.TabIndex = 14;
@@ -168,17 +169,28 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(55, 168);
+            this.label7.Location = new System.Drawing.Point(38, 166);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 20);
             this.label7.TabIndex = 34;
             this.label7.Text = "Nguyên Liệu ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(790, 109);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 20);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "VND";
             // 
             // ThemMonAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(940, 648);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -217,5 +229,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label3;
     }
 }

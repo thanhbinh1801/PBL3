@@ -43,6 +43,18 @@ namespace PBL3
             //db.AddUser(new_user);
             //db.AddUser(user1);
             //db.AddUser(user2);
+
+            // Chuẩn hóa nguyên liệu khi khởi động chương trình
+            try
+            {
+                NguyenLieu_Service nguyenLieuService = new NguyenLieu_Service();
+                nguyenLieuService.ChuanHoaTatCaNguyenLieu();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi chuẩn hóa nguyên liệu: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
             Application.Run(new fDangnhap());
         }
     }

@@ -131,7 +131,7 @@ namespace PBL3.GUI.QuanLy
             {
                 tenNguyenLieu = nguyenlieuservice.GetNguyenLieuById(nl.IDNguyenLieu).tenNguyenLieu,
                 soLuong = nl.soLuong,
-                donVi = nguyenlieuservice.GetNguyenLieuById(nl.IDNguyenLieu).donViTinh
+                donVi = nl.donVi
             }).ToList();
 
             dgvNguyenLieu.DataSource = displayData;

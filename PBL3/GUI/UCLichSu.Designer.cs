@@ -37,12 +37,12 @@
             // 
             this.dgvLichSu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvLichSu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLichSu.Location = new System.Drawing.Point(56, 81);
+            this.dgvLichSu.Location = new System.Drawing.Point(35, 81);
             this.dgvLichSu.Name = "dgvLichSu";
             this.dgvLichSu.RowHeadersWidth = 51;
             this.dgvLichSu.RowTemplate.Height = 24;
             this.dgvLichSu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLichSu.Size = new System.Drawing.Size(858, 428);
+            this.dgvLichSu.Size = new System.Drawing.Size(932, 428);
             this.dgvLichSu.TabIndex = 0;
             // 
             // label1

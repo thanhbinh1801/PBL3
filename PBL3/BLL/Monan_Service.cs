@@ -26,13 +26,11 @@ namespace PBL3.BLL
         {
             try
             {
-                MessageBox.Show("Adding MonAnNguyenLieu with IDMonAn: " + monAnNguyenLieu.IDMonAn, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 db.MonAnNguyenLieux.Add(monAnNguyenLieu);
 
                 db.SaveChanges();
 
-                MessageBox.Show("Dữ liệu đã được thêm thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 return true;
             }
@@ -122,6 +120,31 @@ namespace PBL3.BLL
         }
 
         // UPDATE
+        public bool UpdateMonAn(int id, MonAn updatedMonAn)
+        {
+            try
+            {
+                var existingMonAn = db.MonAns.Find(id);
+                if (existingMonAn == null) return false;
+
+                // Cập nhật thông tin món ăn
+                existingMonAn.tenMonAn = updatedMonAn.tenMonAn; 
+                existingMonAn.giaBan = updatedMonAn.giaBan; 
+                existingMonAn.trangThai = updatedMonAn.trangThai;  
+
+                // Xóa tất cả các nguyên liệu cũ của món ăn
+                var oldIngredients = db.MonAnNguyenLieux.Where(m => m.IDMonAn == id);
+                db.MonAnNguyenLieux.RemoveRange(oldIngredients);
+
+                db.SaveChanges();  
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi cập nhật món ăn: " + ex.Message);
+                return false;
+            }
+        }
         public bool UpdateMonAnNguyenLieu(MonAnNguyenLieu monAnNguyenLieu)
         {
             try
@@ -148,18 +171,6 @@ namespace PBL3.BLL
                 Console.WriteLine("Lỗi khi cập nhật nguyên liệu: " + ex.Message);
                 return false; 
             }
-        }
-        public bool UpdateMonAn(int id, MonAn updatedMonAn)
-        {
-            var existingMonAn = db.MonAns.Find(id);
-            if (existingMonAn == null) return false;
-
-            existingMonAn.tenMonAn = updatedMonAn.tenMonAn; 
-            existingMonAn.giaBan = updatedMonAn.giaBan; 
-            existingMonAn.trangThai = updatedMonAn.trangThai;  
-
-            db.SaveChanges();  
-            return true;
         }
 
         // DELETE

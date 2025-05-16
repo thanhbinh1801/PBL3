@@ -66,12 +66,12 @@
             // 
             this.dgvMonAn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMonAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMonAn.Location = new System.Drawing.Point(53, 183);
+            this.dgvMonAn.Location = new System.Drawing.Point(21, 183);
             this.dgvMonAn.Name = "dgvMonAn";
             this.dgvMonAn.RowHeadersWidth = 51;
             this.dgvMonAn.RowTemplate.Height = 24;
             this.dgvMonAn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMonAn.Size = new System.Drawing.Size(882, 388);
+            this.dgvMonAn.Size = new System.Drawing.Size(959, 388);
             this.dgvMonAn.TabIndex = 9;
             // 
             // label1

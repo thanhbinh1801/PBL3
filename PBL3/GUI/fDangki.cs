@@ -24,10 +24,11 @@ namespace PBL3
 
         private void btnDangKi_Click(object sender, EventArgs e)
         {
+            
             if (validate.checkHVT(txtHVT.Text) && validate.checkEmail(txtEmail.Text) && validate.checkTenTK(txtTenTK.Text) 
+                && validate.checkPhanQuyen(rbNhanVien, rbDauBep)
                 && validate.checkMK(txtMK.Text) )
             {
-                //&& validate.checkPhanQuyen(rbNhanVien, rbDauBep)
                 try
                 {
                     Console.WriteLine("bat dau dang ki");
@@ -36,8 +37,8 @@ namespace PBL3
                         tenNguoiDung = txtHVT.Text,
                         tenTaiKhoan = txtTenTK.Text,
                         matKhau = HashPassword.HashPW(txtMK.Text),
-                        //phanQuyen = rbNhanVien.Checked ? PhanQuyen.NhanVien : PhanQuyen.DauBep,
-                        phanQuyen = PhanQuyen.QuanLy,
+                        phanQuyen = rbNhanVien.Checked ? PhanQuyen.NhanVien : PhanQuyen.DauBep,
+                        //phanQuyen = PhanQuyen.QuanLy,
                         email = txtEmail.Text,
                     };
                     db.nguoidungs.Add(nguoiDung);
